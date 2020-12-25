@@ -1,4 +1,4 @@
-package com.br.zup.testeapi.entities;
+package com.br.zup.testeapi.entity;
 
 import java.sql.Date;
 
@@ -16,14 +16,9 @@ import lombok.NoArgsConstructor;
 public class Cliente {
 	
 	private Long idCliente;
-	
 	private String nome;
-	
 	private String email;
-	
 	private String cpf;
-	
-	private Date dataNasciment;
-	
+	private String dataNascimento;
 
 }
