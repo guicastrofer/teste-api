@@ -3,19 +3,13 @@ package com.br.zup.testeapi.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-<<<<<<< HEAD
-import com.br.zup.testeapi.entities.Cliente;
-import com.br.zup.testeapi.repository.ClienteRepository;
-import com.br.zup.testeapi.request.ClienteRequest;
-=======
 import com.br.zup.testeapi.entity.Cliente;
 import com.br.zup.testeapi.repository.ClienteRepository;
->>>>>>> c84e8aedb0180f41ffe8dbf52b672ebf685f838b
+import com.br.zup.testeapi.request.ClienteRequest;
 
 @Service
 public class ClienteService {
 	
-<<<<<<< HEAD
 	@Autowired
 	private ClienteRepository clienteRepository;
 	
@@ -33,18 +27,3 @@ public class ClienteService {
 	    return cliente.getIdCliente();
 	  }
 }
-=======
-	private ClienteRepository clienteRepository;
-	
-	@Autowired
-	public ClienteService(ClienteRepository clienteRepository) {
-		this.clienteRepository = clienteRepository;
-	}
-	
-	public void create(Cliente cliente) {
-		clienteRepository.save(cliente);
-	}
-
-}
-
->>>>>>> c84e8aedb0180f41ffe8dbf52b672ebf685f838b

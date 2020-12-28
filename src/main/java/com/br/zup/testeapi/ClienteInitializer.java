@@ -1,13 +1,10 @@
 package com.br.zup.testeapi;
 
-import java.sql.Date;
-import java.util.UUID;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.br.zup.testeapi.entities.Cliente;
+import com.br.zup.testeapi.entity.Cliente;
 import com.br.zup.testeapi.repository.ClienteRepository;
 import com.github.javafaker.Faker;
 
