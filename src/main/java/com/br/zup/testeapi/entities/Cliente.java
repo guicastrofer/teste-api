@@ -3,18 +3,19 @@ package com.br.zup.testeapi.entities;
 import java.sql.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
 @Entity
 
 public class Cliente {
-	
+	@Id
+	@GeneratedValue
 	private Long idCliente;
 	
 	private String nome;
@@ -23,7 +24,6 @@ public class Cliente {
 	
 	private String cpf;
 	
-	private Date dataNasciment;
-	
+	private String dataNascimento;
 
 }
